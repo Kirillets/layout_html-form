@@ -11,7 +11,132 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
+    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application">
+      <fieldset class="section">
+        <legend> Personal information</legend>
+        <div class="info">
+          <label class="form_field">Surname:
+            <input class="pers-info" type="text" 
+            autocomplete="off" required
+            >
+          </label>
+        </div>
+        <div class="info">
+          <label class="form_field">Name:
+            <input class="pers-info" type="text" 
+            autocomplete="off" required
+            >
+          </label>  
+        </div>
+        <div class="info">
+          <label class="form_field">How old are You?
+            <input class="pers-info" type="number" 
+            min="1" max="100" 
+            value="12" required
+            >
+          </label>  
+        </div>
+        <div class="info">
+          <label class="form_field">Full date of birth:
+            <input class="pers-info" type="date"
+            required
+            >
+          </label>  
+        </div>
+        <div class="info_last">
+          <label class="form_field">I accept the terms of the agreement
+            <input class="pers-info" type="checkbox"
+            required
+            >
+          </label>  
+        </div>
+      </fieldset>
+      <fieldset class="section">
+        <legend>Registration</legend>
+        <div class="info">
+          <label class="form_field">E-mail:
+            <input class="pers-info" type="email"
+            placeholder="email@example.com"
+            required
+            >
+          </label>  
+        </div>  
+        <div class="info_last">
+          <label class="form_field">Password:
+            <input class="pers-info" type="password" 
+            minlength="3" maxlength="10" 
+            required
+            >
+          </label>  
+        </div>  
+      </fieldset>
+      <fieldset class="section">
+        <legend>An interesting fact about you!</legend>
+        <div class="info">
+          <label> Do you love cats?
+            <input class="pers-info" type="radio"
+            name="choice" value="y"
+            > - yes 
+          </label>
+          <label>
+            <input class="pers-info" type="radio" 
+            name="choice" value="n"
+            > - no 
+          </label>
+        </div>  
+        <div class="info">
+          <label class="form_field">What is your favorite color?
+            <input class="pers-info" type="color"
+            required
+            >
+          </label>  
+        </div>  
+        <div class="info">
+          <label class="form_field">What time do you go to bed?
+            <input class="pers-info" type="time" 
+            step="2" required
+            >
+          </label>  
+        </div>  
+        <div class="info">
+          <label class="form_field">
+            What are your favorite brand of cars?
+            <select id="cars" name="cars"
+            size="4" multiple>
+              <option value="bmw">BMW</option>
+              <option value="audi">Audi</option>
+              <option value="lada">Lada</option>
+            </select>
+          </label>
+        </div>  
+        <div class="info_last">
+          <label class="form_field">How do you rate our work?
+            <input class="pers-info" type="range"
+            required
+            >
+          </label>  
+        </div>  
+      </fieldset>
+      <fieldset class="section">
+        <legend>Additional info:</legend>
+        <div class="info">
+          <label class="form_field">
+            Comments:
+            <textarea name="Comments"></textarea>
+          </label>
+        </div>
+        <div class="info_last">
+          <label for="recomendation">Would you reccomend us? </label>
+          <select name="recomendarion" id="recomendarion">
+            <option value="yes">yes</option>
+            <option value="no">no</option>
+          </select>         
+        </div>
+      </fieldset> 
+    </form>
+    <form action="https://mate-academy-form-lesson.herokuapp.com/create-application">
+      <button class="btn" type="submit">Submit</button>  
+    </form>
     <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>
